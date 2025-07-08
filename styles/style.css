@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #f0f8ff;
+}
+
+header h2 {
+  font-size: 24px;
+  color: #122c4f;
+}
+
+header h2 a {
+  text-decoration: underline;
+  color: #122c4f;
+
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #122c4f;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10% 60px; 
+  background-color: #ffffff;
+  align-items: center;
+}
+
+
+article.intro {
+  flex: 2 1 600px;
+  max-width: 600px;
+}
+
+article.intro h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  color:#5b88b2;
+}
+
+article.intro .desc {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.intro {
+  flex: 1 1 400px;
+  padding-right: 40px;
+}
+
+.role {
+  color: #122c4f;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.intro .desc {
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.blue {
+  background-color: #122c4f;
+  color: #ffffff;
+}
+
+.outline {
+  border: 2px solid #333;
+  color: #333;
+  background-color: transparent;
+}
+
+/* Aside */
+.image-section {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+
+.blue-blob img {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+section {
+  padding: 60px 10%;
+  background-color: #fefefe;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px; 
+  color: #122c4f;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+
+#contacts p {
+  text-align: center;
+}
+
+#contacts strong {
+  color: #122c4f;
+}
+
+#about {
+  background-color: #e1f1fe;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.about-photo img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.about-text {
+  flex: 2 1 350px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#education {
+  background-color: #ffffff;
+  padding: 60px 10%;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.education-text {
+  flex: 1 1 500px;
+}
+
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item h4 {
+  font-size: 18px;
+  color: #122c4f;
+  margin-bottom: 10px;
+}
+
+.education-item span {
+  font-weight: 600;
+}
+
+.education-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.education-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.education-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#projects {
+  background-color: #e1f1fe;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  color: #000;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.project-card .category {
+  color: #f97316;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-card h4 {
+  color: #122c4f;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0 15px;
+}
+
+#contacts {
+  background-color: #ffffff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-list p {
+  font-size: 16px;
+  color: #122c4f;
+}
+
+.contact-list a {
+  color: #333;
+  text-decoration: none;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  main {
+    padding: 20px 5% 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  article.intro {
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .image-section {
+    margin-top: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .about-photo img {
+    max-width: 300px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-text, .education-image {
+    max-width: 100%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  section {
+    padding: 40px 5%;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .contact-container {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article.intro h2,
+  .intro h2 {
+    font-size: 24px;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+
+  .about-text,
+  .education-item p,
+  .project-card h4,
+  .contact-list p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .education-item h4 {
+    font-size: 16px;
+  }
+}
+
+
+  
+  
